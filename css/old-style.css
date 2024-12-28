@@ -107,10 +107,7 @@ img {
   display: flex;
   align-items: center;
 }
-.header-nav {
-  display: flex;
-  align-items: center;
-}
+
 .nav-list {
   display: flex;
   align-items: center;
@@ -144,16 +141,6 @@ img {
 .nav-link:focus,
 .nav-link.current {
   color: #404bbf;
-}
-.address-list {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-.header-logo {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  margin-right: 76px;
 }
 
 /* #endregion */

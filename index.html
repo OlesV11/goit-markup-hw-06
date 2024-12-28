@@ -48,16 +48,75 @@
             </li>
           </ul>
         </address>
-        <button class="menu-btn-burger" type="button">
+        <button class="menu-btn-burger" type="button" data-menu-open>
           <svg class="menu-icon-burger" width="24" height="24">
             <use href="./images/icons.svg#icon-burger-menu"></use>
           </svg>
         </button>
       </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close>
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-item-nav">
+              <li class="mobile-menu-nav-list">Studio</li>
+              <li class="mobile-menu-nav-list">Portfolio</li>
+              <li class="mobile-menu-nav-list">Contacts</li>
+            </ul>
+          </nav>
+          <address class="mobile-menu-add">
+            <ul class="mobile-menu-add-item">
+              <li class="mobile-menu-add-list">
+                <a class="mobile-menu-add-link" href="" type="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-menu-add-list">
+                <a
+                  class="mobile-menu-add-link"
+                  href=""
+                  type="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mobile-menu-links-item">
+            <li class="mobile-menu-icons-list">
+              <a class="mobile-menu-icons-list-link" href=""
+                ><svg class="mobile-menu-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li class="mobile-menu-icons-list">
+              <a class="mobile-menu-icons-list-link" href=""
+                ><svg class="mobile-menu-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="mobile-menu-icons-list">
+              <a class="mobile-menu-icons-list-link" href=""
+                ><svg class="mobile-menu-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="mobile-menu-icons-list">
+              <a class="mobile-menu-icons-list-link" href=""
+                ><svg class="mobile-menu-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
       <!-- Section1 -->
-      <section class="section-order hidden">
+      <section class="section-order">
         <div class="container">
           <h1 class="order-title">Effective Solutions for Your Business</h1>
           <button class="order-btn" data-modal-open type="button">
@@ -570,5 +629,6 @@
       </div>
     </div>
     <script src="./js/modal.js  "></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
