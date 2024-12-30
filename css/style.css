@@ -335,18 +335,7 @@ button {
       url(../images/retina/order-service-bg@2x.jpg);
   }
 }
-/* @media screen and(min-width:768px) {
-  .section-order {
-    min-width: 768px;
-    height: 436px;
-    padding: 112px 0;
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/retina/Dark-bg-tablet1x.jpg);
-  }
-} */
+
 @media screen and (min-resolution: 192dpi) {
   .section-order {
     padding: 112px 0;
@@ -401,21 +390,41 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
-/* @media screen and (min-width: 768px) {
-  .section-order {
-    background-color: #2e2f42;
-    padding-top: 188px;
-    padding-bottom: 188px;
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/people-office.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-width: 768px;
-    margin: 0 auto;
-    background-position: center;
-  }
-} */
+
 /* #endregion */
+
+/* Modal mobile */
+.backdrop-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #ffffff;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop-mobile.is-open {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-mobile {
+}
+.modal-mobile-dtn {
+}
+.icon-person-icon {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+.modal-mobile-text {
+}
+.modal-mobile-wrapper {
+}
+.modal-mobile-label {
+}
