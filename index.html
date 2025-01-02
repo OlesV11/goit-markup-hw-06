@@ -628,11 +628,11 @@
         </form>
       </div>
     </div>
-
-    <div class="backdrop-mobile">
-      <dib class="modal-mobile">
+    <!--  -->
+    <div class="backdrop-mobile is-open">
+      <div class="modal-mobile">
         <button class="modal-mobile-dtn">
-          <svg class="icon-person-icon" width="8" height="8">
+          <svg class="modal-mobile-icon-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
@@ -641,14 +641,55 @@
         </p>
         <form>
           <div class="modal-mobile-wrapper">
-            <label class="modal-mobile-label" for="">Name</label>
-            <input type="text" name="user-name-mobile" id="user-name-mobile" />
-            <svg>
-              <use href="./images/icons.svg#icon-person"></use>
-            </svg>
+            <label class="modal-mobile-label" for="user-name-mobile"
+              >Name</label
+            >
+            <div class="modal-mobile-wrapper-input">
+              <input
+                class="modal-mobile-input"
+                type="text"
+                name="user-name-mobile"
+                id="user-name-mobile"
+              />
+              <svg class="icon-person-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-mobile-wrapper">
+            <label class="modal-mobile-label" for="user-number-mobile"
+              >Phone</label
+            >
+            <div class="modal-mobile-wrapper-input">
+              <input
+                class="modal-mobile-input"
+                type="tel"
+                name="user-number-mobile"
+                id="user-number-mobile"
+              />
+              <svg class="icon-person-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-mobile-wrapper">
+            <label class="modal-mobile-label" for="user-email-mobile"
+              >Email</label
+            >
+            <div class="modal-mobile-wrapper-input">
+              <input
+                class="modal-mobile-input"
+                type="email"
+                name="user-email-mobile"
+                id="user-email-mobile"
+              />
+              <svg class="icon-person-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
           </div>
         </form>
-      </dib>
+      </div>
     </div>
     <script src="./js/modal.js  "></script>
     <script src="./js/menu.js"></script>
