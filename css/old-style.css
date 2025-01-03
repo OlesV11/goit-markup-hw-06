@@ -229,7 +229,7 @@ img {
   justify-content: center;
   display: flex;
 }
-.advantages-list {
+.advantages-item {
   display: flex;
   gap: 24px;
   margin-bottom: 8px;

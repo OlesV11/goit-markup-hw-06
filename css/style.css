@@ -457,6 +457,106 @@ button {
 }
 
 /* #endregion */
+/*             */
+
+/* #region Advantages  */
+.advantages-section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media screen and (max-width: 1157.98px) {
+  .container-icons-advantages {
+    display: none;
+  }
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.advantages-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.advantages-list {
+}
+.advantages-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 72px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .advantages-list {
+    width: calc((100% - 24px) / 2);
+  }
+  .advantages-item {
+    padding: 96px 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .advantages-title {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .advantages-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .container-icons-advantages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    max-width: 264px;
+    height: 112px;
+    padding: 24px 100px;
+    margin-bottom: 8px;
+    background-color: #f4f4fd;
+  }
+  .advantages-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+  }
+  .advantages-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    justify-content: center;
+    display: flex;
+  }
+  .advantages-list {
+    width: calc((100% - 72px) / 4);
+  }
+}
+
+/* #endregion */
 
 /* Modal mobile */
 .backdrop-mobile {
@@ -467,7 +567,6 @@ button {
   height: 100%;
   opacity: 0;
   visibility: hidden;
-  /* background-color: #ffffff; */
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -550,6 +649,7 @@ button {
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #ffffff;
 }
 .modal-mobile-text {
   font-weight: 500;
@@ -599,7 +699,104 @@ button {
   color: #8e8f99;
   padding-left: 16px;
   padding-top: 8px;
+  margin-bottom: 16px;
   resize: none;
   background-color: transparent;
   outline: transparent;
+}
+.mobile-modal-label-privacy {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-bottom: 24px;
+}
+
+.mobile-modal-link-privacy {
+  line-height: 1.33;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+}
+.mobile-modal-span-column {
+  display: flex;
+  flex-wrap: wrap;
+  width: 231px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-left: 8px;
+}
+.modal-mobile-wrapper-checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.mobile-modal-label-privacy {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.modal-mobile-input-checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+
+.mobile-modal-span-privacy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-modal-icon-span {
+  fill: transparent;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-mobile-input-checkbox:checked
+  + .mobile-modal-label-privacy
+  .mobile-modal-span-privacy
+  .mobile-modal-icon-span {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+  width: 16px;
+  height: 15px;
+}
+.mobile-modal-btn-send {
+  display: block;
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  border: none;
+  margin-top: 24px;
+}
+.mobile-modal-btn-send:active,
+.mobile-modal-btn-send:focus {
+  background-color: #404bbf;
 }

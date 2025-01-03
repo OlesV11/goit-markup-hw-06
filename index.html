@@ -125,11 +125,11 @@
         </div>
       </section>
       <!-- Section2 -->
-      <section class="advantages-section hidden">
+      <section class="advantages-section">
         <div class="container">
           <h2 class="visually-hidden">Advantages</h2>
-          <ul class="advantages-list">
-            <li class="advantages-item">
+          <ul class="advantages-item">
+            <li class="advantages-list">
               <div class="container-icons-advantages">
                 <svg class="advantages-item-icons" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
@@ -141,7 +141,7 @@
                 the perfect and creative solution.
               </p>
             </li>
-            <li class="advantages-item">
+            <li class="advantages-list">
               <div class="container-icons-advantages">
                 <svg class="advantages-item-icons" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
@@ -153,7 +153,7 @@
                 within the shortest possible time.
               </p>
             </li>
-            <li class="advantages-item">
+            <li class="advantages-list">
               <div class="container-icons-advantages">
                 <svg class="advantages-item-icons" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
@@ -165,7 +165,7 @@
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li class="advantages-item">
+            <li class="advantages-list">
               <div class="container-icons-advantages">
                 <svg class="advantages-item-icons" width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
@@ -613,8 +613,8 @@
               id="user-privacy"
               value="true"
             />
-            <label class="modal-label-privacy" for="user-privacy"
-              ><span class="modal-span-privacy">
+            <label class="modal-label-privacy" for="user-privacy">
+              <span class="modal-span-privacy">
                 <svg class="modal-icon-span" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use></svg></span
               >I accept the terms and conditions of the<a
@@ -629,7 +629,7 @@
       </div>
     </div>
     <!--  -->
-    <div class="backdrop-mobile is-open">
+    <div class="backdrop-mobile">
       <div class="modal-mobile">
         <button class="modal-mobile-btn">
           <svg class="modal-mobile-icon-close" width="8" height="8">
@@ -641,8 +641,8 @@
         </p>
         <form>
           <div class="modal-mobile-wrapper">
-            <label class="modal-mobile-label" for="user-name-mobile"
-              >Name</label
+            <label class="modal-mobile-label" for="user-name-mobile">
+              Name</label
             >
             <div class="modal-mobile-wrapper-input">
               <input
@@ -657,8 +657,8 @@
             </div>
           </div>
           <div class="modal-mobile-wrapper">
-            <label class="modal-mobile-label" for="user-number-mobile"
-              >Phone</label
+            <label class="modal-mobile-label" for="user-number-mobile">
+              Phone</label
             >
             <div class="modal-mobile-wrapper-input">
               <input
@@ -673,8 +673,8 @@
             </div>
           </div>
           <div class="modal-mobile-wrapper">
-            <label class="modal-mobile-label" for="user-email-mobile"
-              >Email</label
+            <label class="modal-mobile-label" for="user-email-mobile">
+              Email</label
             >
             <div class="modal-mobile-wrapper-input">
               <input
@@ -689,8 +689,8 @@
             </div>
           </div>
           <div class="modal-mobile-wrapper-comment">
-            <label class="modal-mobil-lable-textarea" for="mobile-user-comment"
-              >Comment</label
+            <label class="modal-mobil-lable-textarea" for="mobile-user-comment">
+              Comment</label
             >
             <textarea
               class="modal-mobile-textarea"
@@ -701,22 +701,24 @@
           </div>
           <div class="modal-mobile-wrapper-checkbox">
             <input
-              class="modal-input-checkbox"
+              class="modal-mobile-input-checkbox"
               type="checkbox"
               name="user-privacy"
               id="user-privacy"
               value="true"
             />
-            <label class="mobile-modal-label-privacy" for="user-privacy"
-              ><span class="mobile-modal-span-privacy">
+            <label class="mobile-modal-label-privacy" for="user-privacy">
+              <span class="mobile-modal-span-privacy">
                 <svg class="mobile-modal-icon-span" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use></svg></span
-              >I accept the terms and conditions of the<a
-                class="mobile-modal-link-privacy"
-                href="#"
-                >Privacy Policy</a
-              ></label
-            >
+              ><span class="mobile-modal-span-column">
+                I accept the terms and conditions of the<a
+                  class="mobile-modal-link-privacy"
+                  href="#"
+                  >Privacy Policy</a
+                >
+              </span>
+            </label>
           </div>
           <button class="mobile-modal-btn-send" type="submit">Send</button>
         </form>
