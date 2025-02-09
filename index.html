@@ -17,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style-nw.css" />
   </head>
   <body>
     <header class="header-page">
@@ -115,13 +115,17 @@
       </div>
     </header>
     <main>
-      <!-- Section1 -->
       <section class="section-order">
         <div class="container">
           <h1 class="order-title">Effective Solutions for Your Business</h1>
-          <button class="order-btn" data-modal-open type="button">
-            Order Service</button
-          >.
+          <button
+            class="order-btn"
+            data-modal-open
+            data-modal-open-mobile
+            type="button"
+          >
+            Order Service
+          </button>
         </div>
       </section>
       <!-- Section2 -->
@@ -359,7 +363,7 @@
       </section>
       <!-- Our Portfolio -->
       <!-- Section4 -->
-      <section class="section-app hidden">
+      <section class="section-app">
         <div class="container">
           <h2 class="team-title">Our Portfolio</h2>
           <ul class="list-app">
@@ -481,7 +485,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer hidden">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="footer-logo-position">
           <a class="footer-logo" href="./index.html"
@@ -542,7 +546,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop hidden" data-modal>
+    <!-- <div class="backdrop" data-modal>
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-icon" width="8" height="8">
@@ -627,11 +631,11 @@
           <button class="modal-btn-send" type="submit">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
     <!--  -->
-    <div class="backdrop-mobile">
+    <div class="backdrop-mobile" data-modal-mobile>
       <div class="modal-mobile">
-        <button class="modal-mobile-btn">
+        <button class="modal-mobile-btn" data-modal-close-mobile>
           <svg class="modal-mobile-icon-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -699,24 +703,22 @@
               placeholder="Text input"
             ></textarea>
           </div>
+
           <div class="modal-mobile-wrapper-checkbox">
             <input
-              class="modal-mobile-input-checkbox"
+              class="modal-mobile-input-checkbox visually-hidden"
               type="checkbox"
               name="user-privacy"
               id="user-privacy"
               value="true"
             />
             <label class="mobile-modal-label-privacy" for="user-privacy">
-              <span class="mobile-modal-span-privacy">
-                <svg class="mobile-modal-icon-span" width="10" height="8">
+              <span class="mobile-modal-span-privacy"
+                ><svg class="mobile-modal-icon-span" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use></svg></span
-              ><span class="mobile-modal-span-column">
-                I accept the terms and conditions of the<a
-                  class="mobile-modal-link-privacy"
-                  href="#"
-                  >Privacy Policy</a
-                >
+              ><span>
+                I accept the terms and conditions of the
+                <a class="mobile-modal-link-privacy" href="">Privacy Policy</a>
               </span>
             </label>
           </div>
@@ -726,5 +728,6 @@
     </div>
     <script src="./js/modal.js  "></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/mobile-modal.js"></script>
   </body>
 </html>

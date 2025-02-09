@@ -551,6 +551,12 @@ button {
     justify-content: center;
     display: flex;
   }
+  .advantages-item {
+    padding: 96px 0;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    gap: 24px;
+  }
   .advantages-list {
     width: calc((100% - 72px) / 4);
   }
@@ -673,11 +679,11 @@ button {
   }
   .team-item {
     display: flex;
-    flex-wrap: nowrap;
-    /* width: calc((100% - 96px) / 4); */
-    width: 1140px;
-    padding-left: 0;
-    padding-right: 0;
+    /* flex-wrap: nowrap; */
+    /* width: calc((100% - 72px) / 4); */
+    min-width: 1140px;
+    /* padding-left: 0; */
+    /* padding-right: 0; */
     gap: 24px;
   }
   .team-list {
