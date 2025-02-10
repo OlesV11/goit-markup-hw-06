@@ -941,17 +941,22 @@ footer {
   .advantages-section {
     padding-top: 96px;
     padding-bottom: 96px;
-    padding-left: 16px;
-    padding-right: 16px;
+    /* padding-left: 16px; */
+    /* padding-right: 16px; */
+  }
+
+  .advantages-item {
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    /* gap: 24px; */
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 64px;
+    column-gap: 24px;
+    flex-direction: row;
   }
   .advantages-list {
     width: calc((100% - 24px) / 2);
-  }
-  .advantages-item {
-    padding: 96px 0;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 24px;
   }
   .advantages-title {
     display: flex;
@@ -977,9 +982,9 @@ footer {
   .ourteam-icons {
     fill: #f4f4fd;
   }
-  .list-app {
-    min-width: 768px;
-    row-gap: 72px;
+
+  .item-app {
+    width: calc((100% - 48px) / 2);
   }
   footer {
     padding: 96px 0;
