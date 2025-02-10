@@ -235,6 +235,33 @@ img {
   background-position: center;
   padding: 72px 0;
 }
+
+@media screen and (min-width: 1158px) {
+  .section-order {
+    background-color: #2e2f42;
+    padding: 72px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/retina/people-office-desktop1x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1140px;
+    margin: 0 auto;
+    background-position: center;
+    padding: 188px 0;
+  }
+  @media screen and (min-resolution: 2x) {
+    .section-order {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/retina/people-office-desktop@2x.jpg);
+    }
+  }
+}
 .order-title {
   display: flex;
   text-align: center;
@@ -796,3 +823,227 @@ footer {
 }
 
 /* #endregion */
+/*  */
+/*  */
+/* #region Tablet style */
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 15px;
+  }
+  .menu-btn-burger {
+    display: none;
+  }
+  .nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .address {
+    display: block;
+    font-style: normal;
+  }
+  .address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 12px;
+  }
+  .address-link {
+    display: block;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .address-link:hover,
+  .address-link:focus {
+    color: #404bbf;
+  }
+  .header-logo {
+    padding: 24px 0;
+    display: block;
+    margin-right: 120px;
+  }
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+  .nav-link.current {
+    position: relative;
+  }
+  .nav-link.current::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404bbf;
+  }
+  .nav-link {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .nav-link:hover,
+  .nav-link:focus,
+  .nav-link.current {
+    color: #404bbf;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .section-order {
+    background-color: #2e2f42;
+    padding: 72px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/retina/Dark-bg-tablet1x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 768px;
+    margin: 0 auto;
+    background-position: center;
+    padding: 112px 0;
+  }
+  @media screen and (min-resolution: 2x) {
+    .section-order {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/retina/Dark-bg-tablet@2x.jpg);
+    }
+  }
+  .order-title {
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    margin-top: 112px;
+    max-width: 496px;
+  }
+  .order-btn {
+    margin-top: 36px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  }
+  .advantages-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .advantages-list {
+    width: calc((100% - 24px) / 2);
+  }
+  .advantages-item {
+    padding: 96px 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .advantages-title {
+    display: flex;
+  }
+  .team-card {
+    padding: 96px 0;
+    background-color: #f4f4fd;
+    min-width: 768px;
+  }
+  .team-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    min-width: 768px;
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+
+  .ourteam-link-icons:active,
+  .ourteam-link-icons:focus {
+    background-color: #404bbf;
+  }
+  .ourteam-icons {
+    fill: #f4f4fd;
+  }
+  .list-app {
+    min-width: 768px;
+    row-gap: 72px;
+  }
+  footer {
+    padding: 96px 0;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .footer-logo-position {
+    display: inline-block;
+    margin-right: 24px;
+  }
+  .footer-text {
+    max-width: 264px;
+  }
+  .footer-logo-position-social {
+  }
+  .footer-logo {
+    justify-content: flex-start;
+  }
+  .subscribe-text {
+    margin: 0;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+  }
+  .subscribe-input {
+    width: 264px;
+    opacity: 0.3;
+  }
+  .subscribe-form {
+    gap: 24px;
+  }
+  .subscribe-wrapper {
+    margin-right: 41px;
+  }
+}
+
+/* #endregion */
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+  .section-order {
+    background-color: #2e2f42;
+    padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/retina/people-office-desktop1x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1140px;
+    margin: 0 auto;
+    background-position: center;
+  }
+  @media screen and (min-resolution: 2x) {
+    .section-order {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/retina/people-office-desktop@2x.jpg);
+    }
+  }
+}
