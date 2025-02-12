@@ -925,6 +925,14 @@ button {
   width: 16px;
   height: 15px;
 }
+.modal-mobile-input-checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
 .mobile-modal-btn-send {
   display: block;
   border-radius: 4px;

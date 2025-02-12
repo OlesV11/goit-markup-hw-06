@@ -486,7 +486,7 @@ footer {
 .footer-container {
   display: flex;
   align-items: baseline;
-  /* flex-direction: column; */
+
   flex-wrap: wrap;
 }
 .footer-text {
@@ -764,14 +764,7 @@ footer {
 .mobile-modal-btn-send:focus {
   background-color: #404bbf;
 }
-/*  */
-.modal-mobile-input-checkbox:checked
-  + .mobile-modal-label-privacy
-  .mobile-modal-span-privacy {
-  background-color: #404bbf;
-  border: none;
-  fill: #f4f4f4;
-}
+
 .mobile-modal-label-privacy {
   font-weight: 400;
   font-size: 12px;
@@ -809,6 +802,13 @@ footer {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
+}
+.modal-mobile-input-checkbox:checked
+  + .mobile-modal-label-privacy
+  .mobile-modal-span-privacy {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4f4;
 }
 
 /* #endregion */
